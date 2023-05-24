@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Index.css">
+    <title>Document</title>
+</head>
+<body>
+    <form name="contactForm" onsubmit="return ValidateForm()">
+        <h2>Application From</h2>
+        <div class="row">
+            <label>Full Name:</label>
+            <input type="text" name="Name">
+            <div class="error" id="nameErr"></div>
+        </div>
+        <div class="row">  
+            <label>Email Address:</label>
+            <input type="email" name="email"></div>
+        <div class="row">
+            <label>Mobile Number:</label>
+            <input type="text" name="Number">
+        </div>
+        <div class="row">
+            <label>Country:</label>
+        <select name="Country">
+            <option value="select">Select</option>
+            <option value="India">India</option>
+            <option value="Dubai">Dubai</option>
+            <option value="Usa">Usa</option>
+        </select>
+        </div>
+        <div class="row">
+            <label>Gender:</label>
+            <div class="form-inline">
+                <label><input type="radio" name="Gender" id=""> Male:</label>
+                <label><input type="radio" name="Gender" id="">Femel:</label></div>
+        </div>
+        <div class="row">
+            <label>Hobbies:<i>(optional)</i></label>
+            <div class="form-inline">
+            <label><input type="checkbox" name="Hobbies[]" id="">Sports</label>
+            <label><input type="checkbox" name="Hobbies[]" id="">Movies</label>
+             <label><input type="checkbox" name="Hobbies[]" id="">Music</label>
+            </div>
+          </div>
+          <div class="row">
+            <input type="submit" value="submit">
+          </div>
+    </form>
+    <script src="./Index.js"></script>
+</body>
+</html>
